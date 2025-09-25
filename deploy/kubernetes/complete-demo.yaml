@@ -31,8 +31,8 @@ spec:
               - SETUID
           readOnlyRootFilesystem: true
         volumeMounts:
-        - mountPath: /tmp
-          name: tmp-volume
+        - name: tmp-volume
+          mountPath: /tmp
       volumes:
         - name: tmp-volume
           emptyDir:
